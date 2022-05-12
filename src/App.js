@@ -1,9 +1,7 @@
 import React from 'react'
-import Hero from './componants/Hero'
-import Navbar from './componants/Navbar'
-import LatestRecipes from './componants/LatestRecipes'
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import Footer from './componants/Footer';
+import Home from './pages/Home';
+
 
 const theme = createTheme({
     typography: {
@@ -17,10 +15,7 @@ const theme = createTheme({
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-        <Navbar/>
-        <Hero />
-        <LatestRecipes />
-        <Footer />
+        <Home/>
     </ThemeProvider>
   )
 }
