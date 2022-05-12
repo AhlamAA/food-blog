@@ -6,7 +6,11 @@ import React from 'react'
 const useStyles = makeStyles((theme) => ({
     cardGrid:{
         display: 'flex', 
-        flexDirection: 'row'
+        flexDirection: 'row', 
+        columnGap: theme.spacing(2), 
+        flexWrap: 'nowrap', 
+        height: '600px', 
+        overflow: 'auto'
     }
 }))
 
@@ -24,11 +28,9 @@ export default function LatestRecipes() {
         <Typography variant='h4'>
             Latest Recipes
         </Typography>
-        <Container>
-            <Grid container spacing={2} className={classes.cardGrid}>
-                {cards}
-            </Grid>
-        </Container>
+        <div className={classes.cardGrid}>
+            {cards}
+        </div>
     </Container>
   )
 }

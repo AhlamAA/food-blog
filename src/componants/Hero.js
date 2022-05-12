@@ -1,6 +1,6 @@
-import { Button, Container, makeStyles, Typography } from '@material-ui/core'
+import { alpha, Button, Container, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
-import imgH from '../img/cupcake.png'
+import imgH from '../img/cupcake.jpg'
 
 const useStyles = makeStyles((theme) => ({
     heroContainer:{
@@ -14,24 +14,19 @@ const useStyles = makeStyles((theme) => ({
         color: '#0A0609',
         fontSize: '40px'
     },
-    buttons:{
-       display: 'flex', 
-       alignItems: 'center', 
-       marginTop: theme.spacing(3)
-    },
     button:{
-        marginRight: theme.spacing(2),
+        marginTop: theme.spacing(7),
         backgroundColor: '#BD9658', 
         borderRadius: 17,
-        color: '#F6ECE7','&:hover': {
-            backgroundColor: '#DEBAAB',
+        color: '#F6ECE7',
+        '&:hover': {
+            backgroundColor: '#c5a36d', 
         },
         textTransform: 'capitalize',
-        // fontStyle: 'bold',  
         fontSize: '18px', 
     },
     heroImg:{ 
-        // size: '75%'
+        marginTop: theme.spacing(2),
     },
     
 })) 
@@ -41,19 +36,18 @@ export default function Hero() {
     return (
         <Container className={classes.heroContainer}>
             <div className={classes.heroContent}>
-                <Typography variant='h6'>
-                    psst: we're happy you're here!
-                </Typography>
                 <Typography variant='h3'>
                     Get cooking with our collection of delicious plant-based recipes.
                 </Typography>
-                <div className={classes.buttons}>
-                    <Button variant='contained' className={classes.button}>Start</Button>
-                    <Button variant='contained' className={classes.button}>Share a Recipe</Button>
+                <Typography variant='h6'>
+                    psst: we're happy you're here!
+                </Typography>
+                <div>
+                    <Button variant='contained' className={classes.button}>Browse Recipes</Button>
                 </div>
             </div>
-            <div>
-                <img src={imgH} alt='girl' className={classes.heroImg}/>
+            <div className={classes.heroImg}>
+                <img src={imgH} alt='girl'/>
             </div>
         </Container>
     )
