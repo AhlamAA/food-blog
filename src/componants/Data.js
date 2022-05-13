@@ -34,5 +34,17 @@ export default [
     {//9
         title: "Peanut Butter Cookie Dough Energy Balls",
         imageUrl: "https://cdn.pickuplimes.com/cache/09/5f/095fc770e1a7725c03fcb9bf7e0e701d.jpg"
-    }
+    }, 
+    {//10
+        title: "Leek and Spinach Tofu Quiche",
+        imageUrl: "https://cdn.pickuplimes.com/cache/b1/eb/b1eb64b303c5b8905a083e4db3f04006.jpg"
+    }, 
+    {//11
+        title: "Creamy Vegan Harissa Pasta",
+        imageUrl: "https://cdn.pickuplimes.com/cache/a1/c6/a1c6de57c148dc9f7159fc94c4d67727.jpg"
+    }, 
+    {//12
+        title: "Vegan Onigirazu: Rice Sandwiches",
+        imageUrl: "https://cdn.pickuplimes.com/cache/88/c6/88c67dfd1c5a84e9490379b3767d50f9.jpg"
+    },    
 ]

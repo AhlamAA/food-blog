@@ -9,7 +9,7 @@ const theme = createTheme({
     typography: {
       fontFamily: [
         "Cormorant Garamond",
-        "sans-serif"
+        "sans-serif",
       ].join(",")
     }
   })
@@ -17,8 +17,8 @@ const theme = createTheme({
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-        <Home/>
-        {/* <Recipes /> */}
+        {/* <Home/> */}
+        <Recipes />
         {/* <OneRecipe /> */}
     </ThemeProvider>
   )
